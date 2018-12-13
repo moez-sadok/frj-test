@@ -1,0 +1,7 @@
+<frj-search (selectedLeague)="getTeamsByLeague($event)"></frj-search>
+
+<div class="teams-container">
+  <div *ngFor="let team of teams">
+    <img  (click)="selectTeam(team)" class="frj-team-logo" src="{{team.strTeamBadge}}">
+  </div>
+</div>

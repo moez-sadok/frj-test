@@ -1,0 +1,14 @@
+<form class="frj-form">
+  <mat-form-field class="frj-full-width">
+    <!-- <mat-icon matSuffix>search</mat-icon> -->
+    <input matInput placeholder="Search" aria-label="league" [matAutocomplete]="auto" [(ngModel)]="strValue" [formControl]="searchCtrl">
+    <button mat-button matSuffix mat-icon-button aria-label="Clear" (click)="strValue=''" >
+        <mat-icon>close</mat-icon>
+      </button>
+    <mat-autocomplete #auto="matAutocomplete"  (optionSelected)='getSelectedLeague($event.option.value)'>
+      <mat-option *ngFor="let league of filterLeagues | async" [value]="league.strLeague">
+        <span>{{league.strLeague}}</span> 
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</form>

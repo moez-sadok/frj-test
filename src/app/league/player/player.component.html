@@ -1,0 +1,15 @@
+<div class="playeritem-icon ellipses-title" >
+    <div class="playeritem frj-icon-size">
+      <img
+        *ngIf="player.strThumb"
+        class="frj-player-logo"
+        src="{{player.strThumb}}"
+      />
+    </div>
+    <div class="playeritem ellipses-title">
+      <span class="playeritem-title">{{ player.strPlayer }}</span>
+      <span>{{ player.strPosition }}</span>
+      <span>Birthday: {{ player.dateBorn }}</span>
+      <span>Price: {{ player.strSigning }}</span>
+    </div>
+  </div>

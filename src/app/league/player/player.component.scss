@@ -1,0 +1,43 @@
+
+  .playeritem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .playeritem-title {
+    font-weight: 600;
+  }
+
+  .player-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .frj-player-logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 2px;
+    border: 2px solid #e0e0e0;
+  }
+
+  .playeritem-icon {
+    display: flex;
+    flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    margin: 5px;
+    border: 2px solid #c1c1c1;
+    background: #f1f1f1;
+    padding: 5px;
+  }
+
+  .ellipses-title {
+    overflow: hidden;
+    min-width: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
